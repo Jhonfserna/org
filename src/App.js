@@ -20,7 +20,7 @@ function App() {
   {
     id: uuid(),
     equipo: "Programación",
-    foto: "https://github.com/genesysaluralatam.png",
+    foto: "https://avatars.githubusercontent.com/u/91544872?v=4",
     nombre: "Genesys Rondón",
     puesto: "Desarrolladora de software e instructora",
     fav: false
