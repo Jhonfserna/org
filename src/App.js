@@ -20,7 +20,7 @@ function App() {
   {
     id: uuid(),
     equipo: "Programación",
-    foto: "https://avatars.githubusercontent.com/u/91544872?v=4",
+    foto: "https://github.com/genesysaluralatam.png",
     nombre: "Genesys Rondón",
     puesto: "Desarrolladora de software e instructora",
     fav: false
@@ -49,8 +49,6 @@ function App() {
     puesto: "Dev FullStack",
     fav: false
   }])
-  //Ternario --> condicion ? seMuestra : noSeMuestra
-  // condicion && seMuestra
 
   const [equipos, actualizarEquipos] = useState([
     {
@@ -97,6 +95,10 @@ function App() {
     }
   ])
 
+
+  //Ternario --> condicion ? seMuestra : noSeMuestra
+  // condicion && seMuestra
+
   const cambiarMostrar = () => {
     actualizarMostrar(!mostrarFormulario)
   }
@@ -128,8 +130,7 @@ function App() {
     })
 
     actualizarEquipos(equiposActualizados)
-
-}
+  }
 
   //Crear equipo
   const crearEquipo = (nuevoEquipo) => {
@@ -148,15 +149,14 @@ function App() {
 
     actualizarColaboradores(colaboradoresActualizados)
   }
-  
-  //Lista de equipos
+
   return (
     <div>
       <Header />
       {/* {mostrarFormulario ? <Formulario /> : <></>} */}
       {
         mostrarFormulario && <Formulario
-          equipos={equipos.map((equipo) => equipo.id)}
+          equipos={equipos.map((equipo) => equipo.titulo)}
           registrarColaborador={registrarColaborador}
           crearEquipo={crearEquipo}
         />

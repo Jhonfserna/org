@@ -9,7 +9,7 @@ const Equipo = (props) => {
     const obj = {
         backgroundColor: hexToRgba(colorPrimario, 0.6)
     }
-    
+
 
     const estiloTitulo = { borderColor: colorPrimario }
 
@@ -20,11 +20,11 @@ const Equipo = (props) => {
                 <input
                     type='color'
                     className="input-color"
-                    value={hexToRgba(colorPrimario, 0.6)}
+                    value={colorPrimario}
                     onChange={(evento) => {
                         actualizarColor(evento.target.value, id)
                     }}
-                />   
+                />
                 <h3 style={estiloTitulo} >{titulo}</h3>
                 <div className="colaboradores">
                     {
